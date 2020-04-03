@@ -1,0 +1,23 @@
+{{- if .Values.rbac.create -}}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "tets_uid.fullname" . }}
+  labels:
+{{ include "tets_uid.labels" . | indent 4 }}
+rules:
+  - apiGroups: [""]
+    resources: ["services", "events", "endpoints", "pods", "nodes", "componentstatuses", "nodes/proxy" ]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: [""]
+    resources: ["resourcequotas"]
+    verbs: ["get", "list"]
+  - apiGroups: ["extensions"]
+    resources: ["ingresses"]
+    verbs: ["get", "list", "watch"]
+  - nonResourceURLs: ["/version", "/healthz", "/metrics"]
+    verbs: ["get"]
+  - apiGroups: [""]
+    resources: ["nodes/metrics", "nodes/spec"]
+    verbs: ["get"]
+  {{- end -}}

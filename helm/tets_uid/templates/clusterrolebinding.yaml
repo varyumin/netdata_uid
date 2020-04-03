@@ -1,0 +1,16 @@
+{{- if .Values.rbac.create -}}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ include "tets_uid.fullname" . }}
+  labels:
+{{ include "tets_uid.labels" . | indent 4 }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name:  {{ include "tets_uid.fullname" . }}
+subjects:
+  - kind: ServiceAccount
+    name: {{ template "tets_uid.serviceAccountName" . }}
+    namespace: {{ .Release.Namespace }}
+{{- end -}}
