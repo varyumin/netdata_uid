@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c069fb-3d58-4dfe-9d45-254570bb9ca7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/pod.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/pod.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -96,11 +95,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
+    <state x="477" y="160" key="CommitChangelistDialog2" timestamp="1585925644082">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="477" y="160" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1585925644082" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1585841710307">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -121,5 +128,9 @@
     </state>
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1585841710307" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1585831074371" />
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2" timestamp="1585925646137">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="496" y="301" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1585925646137" />
   </component>
 </project>
